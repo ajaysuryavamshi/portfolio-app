@@ -46,7 +46,7 @@ export default function Page() {
           </h1>
           
           <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Senior SDET with 11+ years of experience building high-performance automation frameworks. 
+            Senior SDET with 13+ years of experience building high-performance automation frameworks. 
             I transform slow, flaky test suites into robust CI/CD assets that accelerate delivery.
           </p>
           
@@ -55,7 +55,7 @@ export default function Page() {
               View Case Studies <ExternalLink size={18} />
             </a>
             <div className="flex gap-3">
-              <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
+              <a href="https://github.com/ajaysuryavamshi" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
                 <Github size={24} />
               </a>
               <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
@@ -93,7 +93,7 @@ export default function Page() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
           <p className="text-lg text-slate-400 leading-relaxed">
-            I am a Quality Engineering leader with over 11 years of experience in the trenches of Telecom, Healthcare, and Finance. 
+            I am a Quality Engineering leader with over 13 years of experience in the trenches of Telecom, Healthcare, and Finance. 
             My philosophy is simple: <strong className="text-white">Quality is not a phase; it is a design requirement.</strong>
           </p>
           <p className="mt-4 text-slate-400 leading-relaxed">
