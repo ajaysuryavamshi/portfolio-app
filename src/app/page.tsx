@@ -58,7 +58,7 @@ export default function Page() {
               <a href="https://github.com/ajaysuryavamshi" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/ajaysuryavamshi" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/ajaysuryavamshi" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
