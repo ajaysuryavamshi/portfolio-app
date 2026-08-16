@@ -1,16 +1,16 @@
 import React from 'react';
-import { Terminal, Cpu, Activity, ShieldCheck, ExternalLink, GitGithub, Linkedin, FileText } from 'lucide-react';
+import { Terminal, Cpu, Activity, ShieldCheck, ExternalLink, Github, Linkedin, FileText } from 'lucide-react';
 import ProjectGrid from '@/components/ProjectGrid';
 
 const SkillCategory = ({ title, skills }: { title: string; skills: string[] }) => (
-  <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-xl hover:border-blue-500/50 transition-colors">
+  <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-xl hover:border-blue-500/50 transition-colors h-full">
     <h3 className="text-blue-400 font-semibold mb-4 flex items-center gap-2">
       <div className="w-2 h-2 bg-blue-500 rounded-full" />
       {title}
     </h3>
     <div className="flex flex-wrap gap-2">
       {skills.map(skill => (
-        <span key={skill} className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700">
+        <span key={skill} className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700 whitespace-nowrap">
           {skill}
         </span>
       ))}
@@ -27,7 +27,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30">
+    <div className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent -z-10" />
@@ -38,7 +38,7 @@ export default function Page() {
             <span>Available for Senior SDET roles</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
             Engineering Scalable <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
               Quality Ecosystems
@@ -56,7 +56,7 @@ export default function Page() {
             </a>
             <div className="flex gap-3">
               <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
-                <GitGithub size={24} />
+                <Github size={24} />
               </a>
               <a href="#" className="p-3 bg-slate-900 border border-slate-800 rounded-lg hover:text-blue-400 transition-colors">
                 <Linkedin size={24} />
