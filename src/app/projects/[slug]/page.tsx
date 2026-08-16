@@ -1,11 +1,12 @@
 import React from 'react';
 import { projects } from '@/config/projects';
 import { notFound } from 'next/navigation';
-import { CheckCircle2, ArrowLeft, Target, Tool, Zap, TrendingUp } from 'lucide-react';
+import { CheckCircle2, ArrowLeft, Target, Wrench, Zap, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects.find(p => p.slug === params.slug);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = projects.find(p => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -71,7 +72,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           {/* Action (The Engineering) */}
           <section className="p-8 bg-slate-900/50 border border-slate-800 rounded-3xl">
             <div className="flex items-center gap-3 text-white font-semibold text-2xl mb-6">
-              <Tool className="text-blue-400" size={28} />
+              <Wrench className="text-blue-400" size={28} />
               <h2>The Engineering</h2>
             </div>
             <ul className="space-y-4">
