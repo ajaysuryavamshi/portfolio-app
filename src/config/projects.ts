@@ -13,63 +13,66 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'enterprise-cucumber-framework',
-    title: 'Enterprise Cucumber Framework Optimization',
+    slug: 'ai-assisted-quality-engineering',
+    title: 'AI-Powered Test Acceleration Platform',
     company: 'Verizon',
-    shortDescription: 'Reduced regression cycle time by 35% using a scalable BDD framework.',
-    impactStatement: 'Accelerated time-to-market by automating 80% of critical web and API paths.',
-    situation: 'The existing regression cycle was a bottleneck in the release pipeline, requiring significant manual intervention and suffering from long execution windows that delayed feedback to developers.',
-    task: 'Design and maintain a scalable, BDD-driven automation framework to reduce the regression cycle time and increase the percentage of automated coverage across a multi-platform environment.',
+    shortDescription: 'Leveraging LLMs (Gemini/Claude) to automate test design and reporting.',
+    impactStatement: 'Reduced the test design lifecycle and reporting overhead by integrating Generative AI into the QE workflow.',
+    situation: 'Test case creation and daily status reporting were manual, time-consuming processes that delayed the start of execution and created reporting bottlenecks.',
+    task: 'Integrate AI accelerators to automate the generation of test cases, Playwright POMs, and automated stakeholder reporting.',
     action: [
-      'Architected a Cucumber-based BDD framework using Java and Selenium, focusing on reusable step definitions and a modular Page Object Model.',
-      'Implemented a unified automation strategy covering Web, API (Rest-Assured), and Mobile (Appium), ensuring a single source of truth for test scripts.',
-      'Seamlessly integrated the suite into a Jenkins CI/CD pipeline, enabling automated triggers on every build and providing instant failure reports.'
+      'Engineered a prompt-based workflow using Gemini to generate comprehensive test cases and Playwright Page Object Models (POM) from requirement docs.',
+      'Developed AI-driven Knowledge Base generators using Claude Code and GitHub Copilot to streamline onboarding and technical documentation.',
+      'Automated Daily Status Report (DSR) emails and Jira Dashboard updates via AI scripts, reducing reporting effort from hours to minutes.',
+      'Implemented advanced JMeter Regex/JSON extraction and Postman post-scripts to handle complex dynamic data validation.'
     ],
     result: [
-      'Reduced regression cycle time by 35%, significantly accelerating the time-to-market.',
-      'Achieved 80% automation coverage across critical web and API paths.',
-      'Improved build validation efficiency, reducing the escape rate of critical defects into later environments.'
+      'Significantly reduced the manual effort in test case authoring.',
+      'Accelerated the transition from requirements to executable scripts.',
+      'Eliminated manual reporting overhead for leadership through automated AI-driven DSRs.'
     ],
-    techStack: ['Java', 'Selenium', 'Cucumber', 'Rest-Assured', 'Appium', 'Jenkins']
+    techStack: ['Gemini', 'Claude Code', 'GitHub Copilot', 'Playwright', 'JMeter', 'Postman']
   },
   {
-    slug: 'api-first-automation-shift',
-    title: 'API-First Automation Shift',
-    company: 'Innominds',
-    shortDescription: 'Increased API coverage by 50% to reduce UI fragility and speed up feedback.',
-    impactStatement: 'Shifted testing left to detect bugs earlier in the cycle and stabilize the regression suite.',
-    situation: 'Testing was heavily reliant on the UI layer, leading to slow execution and "brittle" tests that failed due to minor UI changes rather than actual logic bugs.',
-    task: 'Shift the testing strategy "left" by increasing API-level coverage, reducing the reliance on the UI, and automating the regression trigger via GitHub Actions.',
+    slug: 'framework-modernization-infrastructure',
+    title: 'Enterprise Automation Modernization',
+    company: 'Verizon',
+    shortDescription: 'Leading the migration of legacy frameworks to modern, high-speed stacks.',
+    impactStatement: 'Eliminated technical debt and reduced flakiness by migrating to Playwright and Selenoid.',
+    situation: 'Legacy Selenium 3 frameworks were suffering from high flakiness, slow execution, and outdated infrastructure (Selenium Grid) that couldn\'t scale with parallel demands.',
+    task: 'Strategize and execute a zero-downtime migration of the automation ecosystem to modern standards.',
     action: [
-      'Developed a robust API automation suite using Rest-Assured, implementing data-driven tests to validate complex business logic without the UI overhead.',
-      'Optimized the web/mobile framework (Selenium/Appium) to handle dynamic elements and asynchronous calls more effectively.',
-      'Configured GitHub Actions workflows to execute automated regression runs on every pull request, ensuring stability before merging.'
+      'Orchestrated the migration from Selenium 3 $\rightarrow$ 4 and a strategic shift from Selenium to Playwright for improved stability and speed.',
+      'Migrated test management and API validation from qMetry to a lean, high-performance Rest-Assured architecture.',
+      'Replaced legacy Selenium Grid with Selenoid to enable better containerized browser management and parallelization.',
+      'Built a custom Test Data Management (TDM) tool using Spring Boot to provide on-demand, consistent test data.'
     ],
     result: [
-      'Increased API automation coverage by 50%, resulting in faster bug detection and more stable test results.',
-      'Reduced the overall test execution time by offloading validation from the UI to the API layer.',
-      'Established a culture of continuous testing through GitHub Actions integration.'
+      'Reduced test flakiness by approximately 40% through the shift to Playwright.',
+      'Achieved massive scalability in execution via Selenoid containerization.',
+      'Removed data-dependency bottlenecks for multiple scrum teams via the Spring Boot TDM tool.'
     ],
-    techStack: ['Java', 'Rest-Assured', 'GitHub Actions', 'Selenium', 'Appium']
+    techStack: ['Playwright', 'Selenium 4', 'Selenoid', 'Rest-Assured', 'Spring Boot', 'Java']
   },
   {
-    slug: 'high-concurrency-grid-implementation',
-    title: 'High-Concurrency Grid Implementation',
-    company: 'ATMECS',
-    shortDescription: 'Improved execution speed by 25% using Selenium Grid for parallel runs.',
-    impactStatement: 'Reduced manual testing effort by 40% through a hybrid framework and nightly automation.',
-    situation: 'The automation suite had grown to a size where sequential execution was no longer viable, leading to "nightly" runs that often bled into the next business day.',
-    task: 'Increase test execution speed and reduce the manual testing burden by implementing parallelization and a hybrid framework architecture.',
+    slug: 'qe-utility-ecosystem',
+    title: 'Internal QE Utility Toolset',
+    company: 'Verizon',
+    shortDescription: 'Developing custom engineering tools to solve complex validation challenges.',
+    impactStatement: 'Created a suite of internal tools that automated high-complexity validations, reducing manual QA effort.',
+    situation: 'Standard tools were insufficient for complex business logic like Feature Flag comparisons and multi-step Post-Order validations.',
+    task: 'Develop a set of lightweight, high-impact utility tools to automate specialized validation patterns.',
     action: [
-      'Designed a Hybrid Automation Framework combining Data-Driven and Keyword-Driven approaches using TestNG and Maven for maximum flexibility.',
-      'Deployed and configured Selenium Grid, enabling parallel execution across multiple browser and OS combinations.',
-      'Built Jenkins pipelines for scheduled nightly regression, with automated email reporting for stakeholder visibility.'
+      'Developed a Feature Flag Comparator to validate configuration consistency across environments.',
+      'Built a Post-Order Validation tool to ensure end-to-end data integrity across order management systems.',
+      'Implemented an End-to-End Validation utility to automate the verification of complex transaction flows.',
+      'Created a JSON/XML comparison engine to validate API responses against complex schemas.'
     ],
     result: [
-      'Improved test execution speed by 25% through strategic parallelization.',
-      'Reduced manual testing effort by 40%, allowing the QA team to focus on exploratory testing and high-risk edge cases.',
-      'Provided 100% visibility into nightly build health via automated reporting.'
+      'Reduced the time required for feature flag audits from hours to seconds.',
+      'Eliminated manual data verification errors in the order management lifecycle.',
+      'Provided the broader QE team with reusable utilities that increased overall sprint velocity.'
     ],
-    techStack: ['Java', 'TestNG', 'Maven', 'Selenium Grid', 'Jenkins']
+    techStack: ['Java', 'Spring Boot', 'JSON/XML Schema', 'JUnit']
   }
 ];
